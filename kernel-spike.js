@@ -22,11 +22,12 @@ function hello() {
   // }
 
   if (messages.length > 0) {
-    alert(messages);
+//     alert(messages);
+    errorElement.innerText = messages.join(", ");
   }
 }
 
 document.addEventListener("submit", () => {
   hello();
-  showError();
+//   showError();
 });
